@@ -1,0 +1,102 @@
+[
+  {
+    "playerName": "Virat Kohli",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316600/316605.png",
+    "country": "India",
+    "playerType": "Batsman",
+    "rating": 95,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 9500
+  },
+  {
+    "playerName": "Rohit Sharma",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316584.png",
+    "country": "India",
+    "playerType": "Batsman",
+    "rating": 92,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off-break",
+    "price": 9300
+  },
+  {
+    "playerName": "MS Dhoni",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/319900/319946.png",
+    "country": "India",
+    "playerType": "Wicket-keeper",
+    "rating": 90,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 9400
+  },
+  {
+    "playerName": "Jasprit Bumrah",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316400/316486.png",
+    "country": "India",
+    "playerType": "Bowler",
+    "rating": 94,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 9000
+  },
+  {
+    "playerName": "Babar Azam",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/320400/320448.png",
+    "country": "Pakistan",
+    "playerType": "Batsman",
+    "rating": 93,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 9200
+  },
+  {
+    "playerName": "Shakib Al Hasan",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316521.png",
+    "country": "Bangladesh",
+    "playerType": "All-rounder",
+    "rating": 88,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm orthodox spin",
+    "price": 8500
+  },
+  {
+    "playerName": "Ben Stokes",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316513.png",
+    "country": "England",
+    "playerType": "All-rounder",
+    "rating": 91,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "price": 9100
+  },
+  {
+    "playerName": "Pat Cummins",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316501.png",
+    "country": "Australia",
+    "playerType": "Bowler",
+    "rating": 92,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 9100
+  },
+  {
+    "playerName": "Rashid Khan",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316581.png",
+    "country": "Afghanistan",
+    "playerType": "Bowler",
+    "rating": 93,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm leg-spin",
+    "price": 8900
+  },
+  {
+    "playerName": "Kane Williamson",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316600/316625.png",
+    "country": "New Zealand",
+    "playerType": "Batsman",
+    "rating": 91,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off-break",
+    "price": 9000
+  }
+]
