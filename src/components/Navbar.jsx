@@ -1,8 +1,8 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
   return (
-    <div className="max-w-330 mx-auto navbar bg-base-100 shadow-sm">
+    <div className="max-w-330 mx-auto navbar bg-base-100 shadow-sm ">
       <div className="flex-1">
         <img src="./assets/logo.png" alt="" />
       </div>
@@ -41,8 +41,8 @@ const Navbar = () => {
               </ul>
             </details>
           </li>
-          <li className="flex flex-row  items-center justify-center"><a >
-            0 coins <img src="/assets/dollar.png" alt="" /></a>
+          <li className="flex flex-row font-semibold  items-center justify-center"><a >
+          {coin} <img src="/assets/dollar.png" alt="" /></a>
           </li>
         </ul>
       </div>

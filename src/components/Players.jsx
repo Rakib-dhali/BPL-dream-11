@@ -1,7 +1,7 @@
 import { use, useState } from "react";
 import Card from "./Card";
 
-const Players = ({ playerPromise }) => {
+const Players = ({ playerPromise, setCoin, coin }) => {
   const data = use(playerPromise);
   const [selectedBtn, setSelectedBtn] = useState("available");
   
@@ -28,7 +28,7 @@ const Players = ({ playerPromise }) => {
         selectedBtn==="available"? 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 m-5">
         {data.map((player) => (
-          <Card player={player} />
+          <Card setCoin={setCoin} coin={coin} player={player} />
         ))}
       </div>
         :""
