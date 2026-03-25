@@ -1,22 +1,25 @@
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 
-const Card = ({player,coin, setCoin}) => {
+const Card = ({player,coin, setCoin, selectedPlayers, setSelectedPlayers}) => {
 
   const handleChoosePlayer = () =>{
-    setSelected(true)
     if(coin<player.price){
       alert("insufficient coin")
     }else{
-      setCoin(coin-player.price)
+      setCoin(coin-player.price);
+      setSelected(true);
+      setSelectedPlayers([...selectedPlayers, player])
     }
 
   }
 
+  
+
 const [selected, setSelected] = useState(false)
 
   return (
-    <div className="p-5 border border-gray-400 rounded-lg">
+    <div className="p-5 border-2 bg-amber-50 border-gray-400 rounded-lg flex flex-col gap-3">
           <img className="rounded-lg" src={player.imageUrl} alt="" />
           <div className="flex items-center gap-2">
             <FaUser />
@@ -38,7 +41,7 @@ const [selected, setSelected] = useState(false)
           </div>
           <div className="flex items-center justify-between">
             <span> price: ${player.price}</span>
-            <button onClick={handleChoosePlayer} class={`btn ${selected? "btn-disabled ": ""}`}>{selected? "selected": "choose player"}</button>
+            <button onClick={() => handleChoosePlayer()} className={`btn ${selected? "btn-disabled ": ""}`}>{selected? "selected": "choose player"}</button>
           </div>
         </div>
   )

@@ -30,13 +30,13 @@
     "price": 9400
   },
   {
-    "playerName": "Jasprit Bumrah",
+    "playerName": "Shachin Tendulkar",
     "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316400/316486.png",
     "country": "India",
-    "playerType": "Bowler",
+    "playerType": "Batsman",
     "rating": 94,
     "battingStyle": "Right-hand bat",
-    "bowlingStyle": "Right-arm fast",
+    "bowlingStyle": "Right-arm leg-break",
     "price": 9000
   },
   {
@@ -50,53 +50,53 @@
     "price": 9200
   },
   {
-    "playerName": "Shakib Al Hasan",
+    "playerName": "Ravichandran Ashwin",
     "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316521.png",
-    "country": "Bangladesh",
+    "country": "India",
     "playerType": "All-rounder",
     "rating": 88,
-    "battingStyle": "Left-hand bat",
-    "bowlingStyle": "Left-arm orthodox spin",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off-break",
     "price": 8500
   },
   {
-    "playerName": "Ben Stokes",
+    "playerName": "J. Charles",
     "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316513.png",
-    "country": "England",
-    "playerType": "All-rounder",
-    "rating": 91,
-    "battingStyle": "Left-hand bat",
-    "bowlingStyle": "Right-arm fast-medium",
-    "price": 9100
-  },
-  {
-    "playerName": "Pat Cummins",
-    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316501.png",
-    "country": "Australia",
-    "playerType": "Bowler",
-    "rating": 92,
-    "battingStyle": "Right-hand bat",
-    "bowlingStyle": "Right-arm fast",
-    "price": 9100
-  },
-  {
-    "playerName": "Rashid Khan",
-    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316581.png",
-    "country": "Afghanistan",
-    "playerType": "Bowler",
-    "rating": 93,
-    "battingStyle": "Right-hand bat",
-    "bowlingStyle": "Right-arm leg-spin",
-    "price": 8900
-  },
-  {
-    "playerName": "Kane Williamson",
-    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316600/316625.png",
-    "country": "New Zealand",
+    "country": "Windies",
     "playerType": "Batsman",
     "rating": 91,
     "battingStyle": "Right-hand bat",
-    "bowlingStyle": "Right-arm off-break",
+    "bowlingStyle": "Right-arm medium",
+    "price": 9100
+  },
+  {
+    "playerName": "Hashim Amla",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316501.png",
+    "country": "South Africa",
+    "playerType": "Batsman",
+    "rating": 92,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 9100
+  },
+  {
+    "playerName": "Shakib AL Hasan",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316500/316581.png",
+    "country": "Bangladesh",
+    "playerType": "All-rounder",
+    "rating": 93,
+    "battingStyle": "left-hand bat",
+    "bowlingStyle": "left-arm off-break",
+    "price": 8900
+  },
+  {
+    "playerName": "Josh Hazlehood",
+    "imageUrl": "https://p.imgci.com/db/PICTURES/CMS/316600/316622.png",
+    "country": "Australia",
+    "playerType": "Bowler",
+    "rating": 91,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
     "price": 9000
   }
 ]
