@@ -1,4 +1,4 @@
-import bannerimg from "../../public/assets/banner-main.png"
+import bannerimg from "/assets/banner-main.png"
 const Banner = () => {
   return (
     <div
