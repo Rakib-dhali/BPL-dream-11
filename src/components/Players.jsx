@@ -1,40 +1,39 @@
-import { use } from "react";
-import { FaUser } from "react-icons/fa";
+import { use, useState } from "react";
+import Card from "./Card";
 
 const Players = ({ playerPromise }) => {
   const data = use(playerPromise);
-
+  const [selectedBtn, setSelectedBtn] = useState("available");
+  
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3">
-      {data.map((player) => (
-        <div className="p-5 border border-gray-400 rounded-lg">
-          <img className="rounded-lg" src={player.imageUrl} alt="" />
-          <div className="flex items-center gap-2">
-            <FaUser />
-            <h1 className="rounded-lg  text-2xl font bold">{player.playerName}</h1>
-          </div>
-
-          <div className="flex items-center justify-between">
-            <span>{player.country}</span>
-            <span className="rounded-lg p-3 bg-gray-200">{player.playerType}</span>
-          </div>
-          <hr />
-          <div className="flex items-center justify-between">
-            <span>rating</span>
-            <span>{player.rating}</span>
-          </div>
-          <div className="flex items-center justify-between">
-            <span>{player.battingStyle}</span>
-            <span>{player.bowlingStyle}</span>
-          </div>
-          <div className="flex items-center justify-between">
-            <span> price: ${player.price}</span>
-            <button class="btn">Chose player</button>
-          </div>
+    <>
+      <div className="flex justify-between items-center my-10">
+        <h2>{selectedBtn}</h2>
+        <div className="flex  ">
+          <button
+            onClick={() => setSelectedBtn("available")}
+            className={`${selectedBtn === "available" ? "bg-yellow-200" : ""} border border-neutral-400 px-5 py-3 rounded-l-md `}
+          >
+            available players
+          </button>
+          <button
+            onClick={() => setSelectedBtn("selected")}
+            className={`${selectedBtn === "selected" ? "bg-yellow-200" : ""} border border-neutral-400 px-5 py-3 rounded-r-md`}
+          >
+            selected players
+          </button>
         </div>
-      ))}
-    </div>
+      </div>
+      {
+        selectedBtn==="available"? 
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 m-5">
+        {data.map((player) => (
+          <Card player={player} />
+        ))}
+      </div>
+        :""
+      }
+    </>
   );
 };
-
 export default Players;
