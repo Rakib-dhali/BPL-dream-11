@@ -1,15 +1,22 @@
+import { toast } from "react-toastify";
 import deleteIcon from "/assets/delete.png";
+import Noplayer from "./Noplayer";
 
-const Selected = ({ selectedPlayers, setSelectedPlayers }) => {
+const Selected = ({ selectedPlayers, setSelectedPlayers, setSelectedBtn, selectedBtn }) => {
 
   const deletePlayer = (selectedPlayer) => {
     const filteredPlayers = selectedPlayers.filter((selected) => selected.playerName !== selectedPlayer.playerName)
     setSelectedPlayers(filteredPlayers)
+    toast.error(`${selectedPlayer.playerName} is removed`)
   }
 
   return (
     <div className="flex flex-col gap-4 mb-10">
-      {selectedPlayers.map((selectedPlayer, index) => (
+
+
+    {selectedPlayers.length > 0?
+
+      selectedPlayers.map((selectedPlayer, index) => (
         <div
           className="flex items-center justify-between border border-gray-500 rounded-lg p-3"
           key={index}
@@ -30,7 +37,7 @@ const Selected = ({ selectedPlayers, setSelectedPlayers }) => {
             <img src={deleteIcon} alt="" />
           </button>
         </div>
-      ))}
+      )): <Noplayer setSelectedBtn={setSelectedBtn} selectedBtn={selectedBtn} /> }
     </div>
   );
 };

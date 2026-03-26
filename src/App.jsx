@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Players from "./components/Players";
 import { Suspense, useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 
 const fetchPlayer = async () => {
@@ -20,6 +21,7 @@ const App = () => {
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
         <Players coin={coin} setCoin={setCoin} playerPromise={playerPromise} />
       </Suspense>
+      <ToastContainer/>
     </>
   );
 };
