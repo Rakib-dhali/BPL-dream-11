@@ -11,7 +11,7 @@ const Players = ({ playerPromise, setCoin, coin }) => {
   return (
     <div className="w-11/12 mx-auto">
       <div className="flex justify-between items-center my-10 mx-auto ">
-        <h2>{selectedBtn}</h2>
+        <h2 className="text-2xl font-bold ">{selectedBtn==="available"? "Available players":`selected players (${selectedPlayers.length}/${data.length})` }</h2>
         <div className="flex  ">
           <button
             onClick={() => setSelectedBtn("available")}
@@ -23,7 +23,7 @@ const Players = ({ playerPromise, setCoin, coin }) => {
             onClick={() => setSelectedBtn("selected")}
             className={`${selectedBtn === "selected" ? "bg-yellow-200" : ""} border border-neutral-400 px-5 py-3 rounded-r-md`}
           >
-            selected players ({selectedPlayers.length}/{data.length})
+            selected players ({selectedPlayers.length})
           </button>
         </div>
       </div>
@@ -35,7 +35,7 @@ const Players = ({ playerPromise, setCoin, coin }) => {
         ))}
       </div>
         :<div>
-          <Selected  selectedPlayers={selectedPlayers} />
+          <Selected  selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} />
         </div>
       }
     </div>

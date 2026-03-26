@@ -1,13 +1,14 @@
 import deleteIcon from "/assets/delete.png";
 
-const Selected = ({ selectedPlayers }) => {
+const Selected = ({ selectedPlayers, setSelectedPlayers }) => {
 
-  // const deletePlayer = () => {
-  //   se
-  // }
+  const deletePlayer = (selectedPlayer) => {
+    const filteredPlayers = selectedPlayers.filter((selected) => selected.playerName !== selectedPlayer.playerName)
+    setSelectedPlayers(filteredPlayers)
+  }
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 mb-10">
       {selectedPlayers.map((selectedPlayer, index) => (
         <div
           className="flex items-center justify-between border border-gray-500 rounded-lg p-3"
@@ -25,7 +26,7 @@ const Selected = ({ selectedPlayers }) => {
               </p>
             </div>
           </div>
-          <button >
+          <button onClick={() => deletePlayer(selectedPlayer)} className="btn">
             <img src={deleteIcon} alt="" />
           </button>
         </div>
